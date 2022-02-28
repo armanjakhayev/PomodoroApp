@@ -4,7 +4,7 @@ import SwiftUI
 struct PomodoroAppApp: App {
     var body: some Scene {
         WindowGroup {
-            AppView()
+            Main()
         }
     }
 }

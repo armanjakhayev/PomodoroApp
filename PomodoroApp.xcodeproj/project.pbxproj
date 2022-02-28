@@ -12,7 +12,6 @@
 		C2C0152A27BCA8BE002DD0DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C0152927BCA8BE002DD0DF /* Preview Assets.xcassets */; };
 		C2C0153127C03A4F002DD0DF /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C0153027C03A4E002DD0DF /* Main.swift */; };
 		C2C0153327C03B57002DD0DF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C0153227C03B57002DD0DF /* Settings.swift */; };
-		C2C0153727C03C23002DD0DF /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C0153627C03C23002DD0DF /* AppView.swift */; };
 		C2C0153927C03D1D002DD0DF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C0153827C03D1D002DD0DF /* Category.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +22,6 @@
 		C2C0152927BCA8BE002DD0DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2C0153027C03A4E002DD0DF /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		C2C0153227C03B57002DD0DF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		C2C0153627C03C23002DD0DF /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		C2C0153827C03D1D002DD0DF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				C2C0152227BCA8BB002DD0DF /* PomodoroAppApp.swift */,
-				C2C0153627C03C23002DD0DF /* AppView.swift */,
 				C2C0153027C03A4E002DD0DF /* Main.swift */,
 				C2C0153227C03B57002DD0DF /* Settings.swift */,
 				C2C0153827C03D1D002DD0DF /* Category.swift */,
@@ -148,7 +145,6 @@
 			files = (
 				C2C0153327C03B57002DD0DF /* Settings.swift in Sources */,
 				C2C0153127C03A4F002DD0DF /* Main.swift in Sources */,
-				C2C0153727C03C23002DD0DF /* AppView.swift in Sources */,
 				C2C0152327BCA8BB002DD0DF /* PomodoroAppApp.swift in Sources */,
 				C2C0153927C03D1D002DD0DF /* Category.swift in Sources */,
 			);

@@ -1,24 +1,25 @@
 import SwiftUI
     
 struct Settings: View {
-    @State var focusTimeInMinute: Int = 26
-//    @Binding var focusTimeInSeconds: Int
-    @State var breakTimeInMinute: Int = 6
-//    @Binding var breakTimeInSeconds: Int
+    @Binding var focusTimeInMinute: Int
+    @Binding var breakTimeInMinute: Int
     var minutes = [Int](0..<60)
-    
+    @State var focusMinutes: Int = 25
+    @State var breakMinutes: Int = 5
+
     var body: some View {
+        
         VStack(spacing: 0){
-            Text("Settings")
-                .fontWeight(.bold)
-                .padding(.top,56)
+                Text("Settings")
+                    .fontWeight(.bold)
+                    .padding(.top,56)
             HStack(spacing: 0){
                 Text("Focus Time")
                 Spacer()
-                Picker(selection: $focusTimeInMinute, label: Text("")){
+                Picker(selection: $focusMinutes, label: Text("")){
                     ForEach(0..<self.minutes.count) { index in
                         Text("\(self.minutes[index]) m").tag(index)
-                    }.foregroundColor(.white)
+                    }
                 }
             }.padding(.trailing).padding(.top, 45)
             Divider()
@@ -27,10 +28,10 @@ struct Settings: View {
             HStack(spacing: 0){
                 Text("Break Time")
                 Spacer()
-                Picker(selection: $breakTimeInMinute, label: Text("")){
+                Picker(selection: $breakMinutes, label: Text("")){
                     ForEach(0..<self.minutes.count) { index in
                         Text("\(self.minutes[index]) m").tag(index)
-                    }.foregroundColor(.white)
+                    }
                 }
             }.padding(.trailing).padding(.top, 21)
             Divider()
@@ -43,6 +44,13 @@ struct Settings: View {
         .padding(.leading)
         .background(Color("MyBlack"))
         .edgesIgnoringSafeArea(.all)
+        .onChange(of: focusMinutes) { newValue in
+            focusTimeInMinute = focusMinutes * 60
+
+        }
+        .onChange(of: breakMinutes) { newValue in
+            breakTimeInMinute = breakMinutes * 60
+        }
     }
 }
 
